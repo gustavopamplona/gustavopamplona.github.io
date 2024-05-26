@@ -10,19 +10,22 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Nav -->
-			<nav id="nav">
+			<nav id="nav" class="dropdown-menu">
 				<ul class="container">
-					<li><a href="#top">Home</a></li>
-					<li><a href="ResearchLines.html" target="_blank">Research Lines</a></li>
-					<li><a href="Blog.html" target="_blank">Blog</a></li>
-					<li><a href="CV.html" target="_blank">CV</a></li>
-					<li><a href="Publications.html" target="_blank">Publications</a></li>
-					<li><a href="Hobbies.html" target="_blank">Hobbies</a></li>
-					<li><a href="Contact.html" target="_blank">Contact</a></li>
+					<select onchange="window.location.href=this.value">
+						<option value="index.html" selected>Home</option>
+						<option value="ResearchLines.html">Research Lines</option>
+						<option value="Blog.html">Blog</option>
+						<option value="CV.html">CV</option>
+						<option value="Publications.html">Publications</option>
+						<option value="Hobbies.html">Hobbies</option>
+						<option value="Contact.html">Contact</option>
+					</select>
 				</ul>
 			</nav>
 
