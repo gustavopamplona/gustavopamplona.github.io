@@ -50,40 +50,20 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<form method="POST" action="https://formspree.io/f/xbjnevoa">
-											<label for="name">Full Name</label>
-											<input id="name" type="text" name="name" pattern="[A-Za-z]+" required />
-									  
-											<label for="email">Email Address</label>
-											<input id="email" type="email" name="email" required />
-									  
-											<label for="message">Message</label>
-											<textarea id="message" name="message" required></textarea>
-									  
-											<button type="submit">Submit</button>
-										  </form>
-										<!--<ul class="actions">
-											<li><form action="http://formspree.io/gsppamplona@gmail.com"><input type="email" name="_replyto"><textarea name="body"></textarea><input type="submit" value="Send"></form></li>
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>-->
-									</div>
-								</div>
+							<form
+								action="https://formspree.io/f/xbjnevoa"
+								method="POST"
+								>
+								<label>
+									Your email:
+									<input type="email" name="email">
+								</label>
+								<label>
+									Your message:
+									<textarea name="message"></textarea>
+								</label>
+								<!-- your other form fields go here -->
+								<button type="submit">Send</button>
 							</form>
 						</div>
 						<div class="col-12">
