@@ -1,104 +1,23 @@
-<!DOCTYPE HTML>
-<!--
-	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Blog - Gustavo Pamplona</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>Form Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <!-- the form from above -->
 
-	<article id="top">
-		<nav id="nav" class="dropdown-menu">
-			<ul class="container">
-				<select onchange="window.location.href=this.value">
-					<option value="index.html">Home</option>
-					<option value="ResearchLines.html" >Research Lines</option>
-					<option value="Blog.html">Blog</option>
-					<option value="CV.html">CV</option>
-					<option value="Publications.html">Publications</option>
-					<option value="Hobbies.html">Hobbies</option>
-					<option value="Contact.html" selected>Contact</option>
-				</select>
-			</ul>
-		</nav>
-		</article>
+    <form method="POST" action="https://formspree.io/f/xbjnevoa">
+      <label for="name">Full Name</label>
+      <input id="name" type="text" name="name" pattern="[A-Za-z]+" required />
 
-	<body class="is-preload">
-		<div id="page-wrapper">
+      <label for="email">Email Address</label>
+      <input id="email" type="email" name="email" required />
 
-			<!-- Header -->
-				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1><a href="index.html" id="logo">TXT</a></h1>
-							<p>A responsive site template by HTML5 UP</p>
-						</div>
-					</div>
-				</header>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
 
-			<!-- Main -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form
-								action="https://formspree.io/f/xbjnevoa"
-								method="POST"
-								>
-								<label>
-									Your email:
-									<input type="email" name="email">
-								</label>
-								<label>
-									Your message:
-									<textarea name="message"></textarea>
-								</label>
-								<!-- your other form fields go here -->
-								<button type="submit">Send</button>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
-		</div>
-	</body>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
